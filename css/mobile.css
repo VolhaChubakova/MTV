@@ -1,0 +1,860 @@
+@import url(style.css);
+.hover-and-active-Item:hover {
+  color: #19FEFE;
+}
+.hover-and-active-Item:active {
+  color: #1E0014;
+}
+.slider-button:hover {
+  color: #19FEFE;
+  background-color: transparent;
+  border-color: #19FEFE;
+}
+.slider-button:active {
+  color: #D0CDCF;
+  border-color: #D0CDCF;
+}
+.item-buttons:hover {
+  background-color: #D0CDCF;
+  color: white;
+}
+.item-buttons:active {
+  background-color: #19FEFE;
+  color: #1E0014;
+}
+.titles-epidodes:hover {
+  color: #D0CDCF;
+}
+.titles-epidodes:active {
+  color: #19FEFE;
+}
+.cast-hover:hover {
+  color: #BAB6B8;
+}
+.cast-hover:active {
+  color: #19FEFE;
+}
+.item-hover:hover {
+  color: #19FEFE;
+}
+.item-hover:active {
+  color: #D0CDCF;
+}
+.description-hover:hover {
+  color: white;
+}
+.slider-title:hover {
+  color: #D0CDCF;
+}
+.slider-title:active {
+  color: #19FEFE;
+}
+.advertising-hover:hover {
+  color: #A29DA0;
+}
+.advertising-hover:active {
+  color: #1E0014;
+}
+.recommend-hover:hover {
+  color: white;
+}
+.recommend-hover:active {
+  color: #19FEFE;
+}
+.links-hover:hover {
+  font-weight: bold;
+  color: #1E0014;
+  border-bottom: 3px solid #19FEFE;
+  padding-bottom: 10px;
+}
+.links-hover:active {
+  font-weight: bold;
+  color: #D0CDCF;
+  border-bottom: 3px solid #D0CDCF;
+}
+.links-hover-mobile:hover {
+  font-weight: bold;
+  color: #1E0014;
+  border-bottom: none;
+  padding-bottom: 0px ;
+}
+.links-hover-mobile:active {
+  font-weight: bold;
+  color: #D0CDCF;
+  border-bottom: none;
+  padding-bottom: 0px ;
+}
+@media only screen and (max-width: 1300px) and (min-width: 980px) {
+  ul li {
+    padding-bottom: 10px;
+    line-height: 1.5;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .slider {
+    min-width: 882px;
+    min-height: 385px;
+    width: 90%;
+  }
+  .box {
+    top: 150px;
+    right: 0;
+  }
+  .advertising .ad-blocks {
+    width: 90%;
+    min-width: 882px;
+  }
+  .episodeItem {
+    min-width: 882px;
+    width: 90%;
+    margin: auto auto 6px;
+  }
+  .episodeInfo {
+    max-width: 301px;
+  }
+  .episodeInfo__button {
+    margin-left: -87px !important;
+  }
+  .episodeImg {
+    min-width: 556px;
+    height: auto;
+    float: right;
+    width: 63%;
+    height: 100%;
+    background-position: 50% 50%;
+  }
+  .news {
+    background-color: #F3F3F3;
+    width: 1215px;
+    margin: 0 auto;
+    width: 90%;
+    min-width: 882px;
+  }
+  .news .newsItemBig {
+    width: 100%;
+    min-width: 882px;
+  }
+  .newsItemBig .itemBig {
+    min-width: 400px;
+    width: 49%;
+  }
+  .itemSmall {
+    position: relative;
+    min-width: 200px;
+    width: 32%;
+  }
+  img.itemSmall__img {
+    min-width: 200px !important;
+    width: 100% !important;
+  }
+  .newsItemSmall .itemSmall .author__name {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .newsItemSmall .itemSmall .author__date {
+    margin-left: 25px;
+    display: block !important;
+  }
+  .container {
+    width: 90%;
+    min-width: 882px;
+  }
+  .stories {
+    width: 90%;
+    max-width: 882px;
+  }
+  .stories .storiesItems .storyItem {
+    width: 40%;
+  }
+  .about-viacom .aboutCompany {
+    width: 90%;
+    min-width: 882px;
+  }
+  ul li {
+    margin-right: 15px;
+  }
+  .items {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 979px) and (min-width: 768px) {
+  ul li {
+    padding-bottom: 10px;
+    line-height: 1.5;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .container {
+    width: 90%;
+    max-width: 979px;
+  }
+  .slider {
+    min-width: 690px;
+    width: 90%;
+  }
+  .box {
+    top: 290px;
+    right: 0;
+  }
+  .advertising .ad-blocks {
+    display: block !important;
+    width: 90%;
+    min-width: 690px;
+    height: 265px;
+  }
+  .advertising .ad-blocks .ad-item {
+    display: block !important;
+    float: none;
+    max-width: 380px;
+    margin-top: 0;
+    height: 110px;
+    padding-top: 15px;
+  }
+  .episodeItem {
+    min-width: 690px;
+    height: 583px;
+    width: 90%;
+    margin: auto auto 20px;
+  }
+  .episodeInfo {
+    max-width: 100%;
+    height: 40%;
+  }
+  .episodeImg {
+    width: 100%;
+    height: 52%;
+  }
+  .episodes .buttons {
+    top: 230px;
+  }
+  .episodeItem:last-child {
+    height: 80%;
+  }
+  .episodeItem:last-child .buttons {
+    display: none;
+  }
+  .episodeItem:last-child .episodeInfo {
+    padding-bottom: 50px !important;
+  }
+  .episodeItem:last-child .episodeItem__shadow {
+    opacity: 0.5;
+  }
+  .episodeInfo__button {
+    margin-left: -87px !important;
+  }
+  .section-name {
+    padding-top: 40px;
+  }
+  .news {
+    width: 90%;
+    min-width: 690px;
+  }
+  .news .newsItemBig {
+    justify-content: space-around;
+  }
+  .newsItemBig .itemBig {
+    min-width: 330px;
+    width: 48% !important;
+    max-width: 48%;
+    height: 420px;
+  }
+  .itemSmall {
+    position: relative;
+    min-width: 200px;
+    width: 32%;
+  }
+  img.itemSmall__img {
+    min-width: 200px !important;
+    width: 100% !important;
+  }
+  .newsItemSmall .itemSmall .author__name {
+    margin-bottom: 7px;
+    padding-right: 0;
+  }
+  .newsItemSmall .itemSmall .author__date {
+    margin-left: 25px;
+    display: block !important;
+  }
+  .stories {
+    width: 90%;
+    max-width: 690px;
+  }
+  .stories .storiesItems {
+    width: 100%;
+    display: inline-block;
+  }
+  .stories .storiesItems .storyItem {
+    width: 49%;
+    display: inline-block !important;
+    height: 160px;
+  }
+  .stories .storiesItems .storyItem .storyItem__title {
+    margin-top: 0;
+    width: 312px;
+    height: 70px;
+  }
+  .about-viacom .aboutCompany {
+    width: 90% !important;
+    min-width: 690px;
+  }
+  ul li {
+    padding-bottom: 10px;
+    line-height: 1.5;
+  }
+  .about-viacom .aboutCompany .socialIcons {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 767px) and (min-width: 481px) {
+  .menu .menu__link {
+    padding-left: 8px;
+  }
+  .nav__title_descr {
+    display: none;
+  }
+  .nav__logo {
+    display: none;
+  }
+  .label {
+    top: 50px;
+  }
+  .slider {
+    min-width: 432px;
+    min-height: 260px;
+    width: 90%;
+    text-align: left;
+  }
+  .buttons_position {
+    top: 185px;
+    left: 0;
+  }
+  .latest-hit {
+    top: 40px;
+  }
+  .slider__title {
+    top: 85px;
+    font-size: 40px;
+  }
+  .slider__season {
+    top: 140px;
+  }
+  .buttons-position {
+    top: 190px;
+  }
+  .box {
+    display: none;
+  }
+  .advertising .ad-blocks {
+    width: 90%;
+    min-width: 432px;
+    height: 276px;
+  }
+  .advertising .ad-blocks .ad-item {
+    max-width: 420px;
+  }
+  .episodesSections .episodeLinks .episodeLinks__link:hover {
+    font-weight: bold;
+    color: #1E0014;
+    border-bottom: none;
+    padding-bottom: 0px ;
+  }
+  .episodesSections .episodeLinks .episodeLinks__link:active {
+    font-weight: bold;
+    color: #D0CDCF;
+    border-bottom: none;
+    padding-bottom: 0px ;
+  }
+  .episodeLinks .episodeLinks__link {
+    line-height: 1.7;
+  }
+  .episodesSections {
+    padding-bottom: 10px;
+  }
+  .episodeItem {
+    min-width: 432px;
+    height: 583px;
+    width: 90%;
+    margin: auto auto 20px;
+  }
+  .episodeInfo {
+    max-width: 100%;
+    height: 40%;
+  }
+  .episodeInfo__descr {
+    width: 95%;
+  }
+  .episodeImg {
+    width: 100%;
+    height: 52%;
+    background-position: center center;
+  }
+  .episodeInfo__button {
+    top: 230px;
+    left: 50%;
+    margin-left: -87px;
+  }
+  .episodeInfo .buttons {
+    top: 230px;
+  }
+  .episodeItem:last-child {
+    height: 80%;
+  }
+  .episodeItem:last-child .buttons {
+    display: none;
+  }
+  .episodeItem:last-child .episodeInfo {
+    padding-bottom: 50px;
+  }
+  .episodeItem:last-child .episodeItem__shadow {
+    opacity: 0.8;
+  }
+  .section-name {
+    padding-top: 30px;
+  }
+  .news {
+    width: 90%;
+    min-width: 432px;
+    height: 2800px !important;
+  }
+  .news .newsItemBig {
+    display: block;
+  }
+  .newsItemBig .itemBig {
+    min-width: 330px;
+    width: 100%;
+    max-width: 100%;
+    height: 515px;
+    margin-bottom: 30px;
+  }
+  .news .newsItemBig .itemBig__img {
+    width: 100%;
+  }
+  .newsItemBig .itemBig .itemBig__title {
+    font-size: 22px;
+  }
+  .newsItemSmall .itemSmall .itemSmall__title {
+    font-size: 22px;
+  }
+  .itemSmall {
+    max-width: 100%;
+    height: 515px;
+    margin-bottom: 30px;
+  }
+  .newsItemSmall {
+    display: block;
+    height: 375px;
+  }
+  img.itemSmall__img {
+    min-width: 200px !important;
+    width: 100% !important;
+  }
+  .newsItemSmall .itemSmall .author__name {
+    margin-bottom: 7px;
+    padding-right: 0;
+  }
+  .newsItemSmall .itemSmall .author__date {
+    display: inline-block;
+  }
+  .about .container {
+    width: 90%;
+    min-width: 432px;
+  }
+  .about {
+    background-size: cover;
+  }
+  .about-viacom .aboutCompany {
+    width: 90% !important;
+    min-width: 432px;
+  }
+  ul li {
+    padding-bottom: 10px;
+    line-height: 1.5;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .about-viacom .aboutCompany .socialIcons {
+    text-align: center;
+  }
+  .stories {
+    width: 90%;
+    max-width: 432px;
+  }
+  .stories .storiesItems {
+    width: 100%;
+    display: block;
+  }
+  .stories .storiesItems .storyItem {
+    width: 100%;
+    display: inline-block !important;
+    height: 160px;
+  }
+  .stories .storiesItems .storyItem .storyItem__title {
+    margin-top: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .stories .stories__note {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: block;
+  }
+  .stories .stories__section-name {
+    padding-bottom: 10px;
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .buttons_position {
+    position: absolute;
+    top: 160px;
+    left: 25px;
+  }
+  html {
+    overflow-x: auto;
+  }
+  body {
+    max-width: 480px;
+    width: 100%;
+    position: fixed;
+    overflow-x: hidden !important;
+    height: 100%;
+  }
+  .label {
+    left: 25px;
+    top: 40px;
+  }
+  .slider {
+    max-width: 480px;
+    min-height: 220px;
+    position: relative;
+  }
+  .nav__title_signIn {
+    display: none;
+  }
+  .toggle-nav {
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    padding: 15px;
+    display: inline-block;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    background: #F3F3F3;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #777;
+    font-size: 22px;
+    transition: color linear 0.15s;
+    text-decoration: none;
+  }
+  .menu {
+    z-index: 20;
+  }
+  .episodesSections .episodeLinks .episodeLinks__link:hover {
+    font-weight: bold;
+    color: #1E0014;
+    border-bottom: none;
+    padding-bottom: 0px ;
+  }
+  .episodesSections .episodeLinks .episodeLinks__link:active {
+    font-weight: bold;
+    color: #D0CDCF;
+    border-bottom: none;
+    padding-bottom: 0px ;
+  }
+  .menu ul.menu_active {
+    display: none;
+  }
+  .fa-search {
+    display: none !important;
+  }
+  .menu ul {
+    width: 127%;
+    padding: 7px 17px;
+    background: #636262;
+    margin-right: 84px;
+    margin-left: -50px;
+  }
+  .menu_active {
+    text-decoration: none;
+    color: black;
+    background-color: #19FEFE;
+  }
+  .menu_active .latest-hit {
+    display: none !important;
+  }
+  .toggle-nav:hover {
+    text-decoration: none;
+    color: #19FEFE;
+  }
+  .menu a {
+    display: block;
+  }
+  .menu li {
+    margin: 5px 0;
+    float: none;
+    display: block;
+    font-size: 17px;
+  }
+  .menu li:hover a {
+    color: #1E0014;
+  }
+  .menu li:active a {
+    color: #19FEFE;
+  }
+  .menu .menu__link {
+    color: #808080;
+    font-size: 17px;
+    text-decoration: none;
+    background-color: #F3F3F3;
+    padding: 20px 21px 20px 20px;
+  }
+  .slider__img {
+    max-width: 480px;
+    width: 100%;
+    height: 250px;
+  }
+  .latest-hit {
+    top: 35px;
+    left: 25px;
+  }
+  .slider__title {
+    top: 80px;
+    left: 25px;
+    font-size: 30px;
+  }
+  .slider__season {
+    top: 120px;
+    left: 25px;
+    font-size: 24px;
+  }
+  .buttons-position {
+    position: absolute;
+    top: 160px;
+    left: 25px;
+  }
+  .advertising .ad-blocks {
+    text-align: left;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    height: 255px;
+  }
+  .box {
+    display: none;
+  }
+  .advertising .ad-blocks .ad-item {
+    margin-left: 25px;
+  }
+  .advertising .ad-blocks .ad-item__descr {
+    width: 60%;
+  }
+  .episodesSections {
+    padding-top: 20px;
+    height: 200px;
+  }
+  .episodesSections .episodeLinks .episodeLinks__link {
+    margin-left: 0;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .episodeItem {
+    min-width: 320px;
+    height: 585px;
+    width: 100%;
+    margin: auto auto 20px;
+  }
+  .episodeInfo {
+    max-width: 100%;
+    height: 45%;
+    padding-top: 20px;
+  }
+  .episodeInfo__descr {
+    width: 95%;
+  }
+  .episodeImg {
+    min-width: 320px;
+    width: 100%;
+    height: 300px;
+    background-position: center center;
+  }
+  .episodeInfo__button {
+    top: 230px;
+    left: 50%;
+    margin-left: -87px;
+  }
+  .episodeInfo .buttons {
+    top: 250px;
+  }
+  .episodeItem:last-child {
+    height: 80%;
+  }
+  .episodeItem:last-child .buttons {
+    display: none;
+  }
+  .episodeItem:last-child .episodeInfo {
+    padding-bottom: 50px;
+  }
+  .episodeItem:last-child .episodeItem__shadow {
+    opacity: 0.8;
+  }
+  .episodeItem .latest-hit {
+    top: 19px;
+    left: 65px;
+  }
+  .episodeInfo__descr {
+    width: 95%;
+  }
+  .episodeItem__shadow {
+    height: 101%;
+  }
+  .episodeItem:last-child {
+    height: 80%;
+  }
+  .episodeItem:last-child .buttons {
+    display: none;
+  }
+  .episodeItem:last-child .episodeImg_background5 {
+    display: none;
+  }
+  .episodeItem .buttons {
+    top: 230px;
+  }
+  .section-name {
+    padding-top: 20px;
+  }
+  .playlists .owl-carousel .owl-theme .owl-item {
+    display: none;
+  }
+  .news {
+    background-color: #F3F3F3;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .news .newsItemBig .itemBig__img {
+    width: 100%;
+    height: auto;
+  }
+  .news .newsItemBig {
+    display: block;
+  }
+  .newsItemBig .itemBig {
+    max-width: 480px;
+    height: 430px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .newsItemBig .itemBig .itemBig__title,
+  .newsItemSmall .itemSmall .itemSmall__title {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+    font-size: 23px;
+    width: 80%;
+  }
+  .newsItemBig .itemBig .author__name,
+  .newsItemSmall .itemSmall .author__name {
+    font-size: 18px;
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  .newsItemBig .itemBig .itemBig__date,
+  .newsItemSmall .itemSmall .author__date {
+    display: block;
+    margin-top: 13px;
+    padding-left: 7px;
+  }
+  .itemSmall__img {
+    max-width: 480px;
+    height: auto;
+    width: 100%;
+  }
+  .itemSmall {
+    max-width: 480px;
+    background-color: white;
+    width: 100%;
+    height: 430px;
+    margin-bottom: 20px;
+  }
+  .newsItemSmall {
+    display: block;
+    height: 1330px;
+  }
+  .about {
+    text-align: center;
+    max-width: 480px;
+    width: 100%;
+    background-size: cover;
+    padding-left: 20px;
+    height: 430px;
+  }
+  .about .aboutSerial .aboutSerial__descr {
+    width: 90%;
+    font-size: 18px;
+  }
+  .recommendations {
+    height: 350px;
+  }
+  .recommendations {
+    background-color: #1E0014;
+    display: none;
+  }
+  .stories {
+    width: 100%;
+    max-width: 480px;
+  }
+  .storiesSection {
+    padding-left: 20px;
+  }
+  .stories .stories__section-name {
+    font-size: 26px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+  .stories .stories__note {
+    padding-top: 0;
+    width: 100%;
+  }
+  .stories .storiesItems {
+    max-width: 480px;
+    margin: 0 auto;
+    display: block;
+    height: 930px;
+    width: 100%;
+  }
+  .stories .storiesItems .storyItem {
+    width: 4;
+    width: 100%;
+    max-width: 480px;
+    height: 120px;
+  }
+  .stories .storiesItems .storyItem .storyItem__title {
+    padding-top: 20px;
+    width: 90%;
+  }
+  .about-viacom .aboutCompany {
+    width: 100%;
+    max-width: 480px;
+  }
+  .about-viacom .aboutCompany .socialIcons {
+    padding-top: 45px;
+  }
+  .aboutCompany ul li {
+    text-align: left;
+    margin-left: 20px;
+    width: 90%;
+  }
+  .about-viacom .aboutCompany .aboutCompany__info {
+    font-size: 14px;
+    width: 80%;
+    margin-left: 40px;
+    line-height: 1.3;
+  }
+  .about-viacom .aboutCompany .socialIcons .fa-facebook,
+  .about-viacom .aboutCompany .socialIcons .fa-instagram,
+  .about-viacom .aboutCompany .socialIcons .fa-tumblr,
+  .about-viacom .aboutCompany .socialIcons .fa-twitter {
+    margin-left: 10px;
+  }
+}

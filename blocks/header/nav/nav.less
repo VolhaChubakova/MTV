@@ -1,0 +1,66 @@
+.nav {
+  position: relative;
+  height: 50px;
+}
+.nav__title {
+  position: absolute;
+  color: @color1;
+  font-size: 15px;
+  font-family: @font1;
+}
+
+.nav__title_descr {
+  left: 70px;
+  top: 13px;
+  padding: 7px;
+  .item-hover;
+}
+
+.nav__logo {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+ul li {
+padding-bottom: 10px;
+line-height: 1.5;
+display: inline-block;
+margin-right: 15px;
+}
+.menu {
+  display: inline;
+  position: absolute;
+  top: 15px;
+  right: 100px;
+
+  .menu__link {
+    color: @color1;
+    font-size: 12px;
+    font-family: @font2;
+    padding-left: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    .item-hover;
+  }
+}
+
+.toggle-nav {
+  display: none;
+}
+
+.nav__title_signIn {
+  right: 26px;
+  top: 12px;
+  padding: 7px;
+  border-left: 1px solid @color1;
+  .item-hover;
+}
+.fa-search {
+  color: @color1;
+  padding-right: 5px;
+  float: right;
+  font-size: 1.5em !important;
+  padding-left: 18px;
+  margin-top: -2px;
+  .item-hover;
+}

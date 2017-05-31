@@ -1,0 +1,20 @@
+{{#episodes}}
+  <div class="episodeItem ">
+    <div class="episodeInfo">
+      <p class="episodeItem__label {{class-label}}"> LATEST EPISODE</p>
+      <img src="imgs/episodes/{{imgIcon}}.png" class="episodeInfo__icon">
+      <h4 class="episodeInfo__number">S6 Episode {{numberEpisode}}</h4>
+      <span class="episodeInfo__date">{{date}}</span>
+      <h3 class="episodeInfo__title">{{title}}</h3>
+      <p class="episodeInfo__descr">{{descr}}</p>
+      <div class="buttons">
+        <button class="oneButton oneButton-margin oneButton-episode">Sing In To Watch</button>
+        <button class="oneButton oneButton-episode ">Episode Clips</button>
+      </div>
+      <span class="{{class-gradient}}"></span>
+      <button class="oneButton oneButton_episodesSections {{class-button}}">Show More Episodes</button>
+    </div>
+    <div class="episodeImg {{class-background}}">
+    </div>
+  </div>
+{{/episodes}}

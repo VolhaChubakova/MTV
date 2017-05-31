@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Teen Wolf</title>
+  <link rel="stylesheet" href="css/reset.css" media="screen">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/mobile.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+  <script type="text/javascript" src="js/menu.min.js"></script>
+  <script type="text/javascript" src="js/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="nav">
+        <span class="nav__title nav__title_descr"> TEEN WOLF</span>
+        <img src="imgs/logo/logo.png" alt="logo-mtv" class="nav__logo">
+        <nav class="menu ">
+          <ul class="menu_active" id="nav"></ul>
+        </nav>
+        <a class="toggle-nav" href="#">&#9776;</a>
+        <span class="nav__title nav__title_signIn"> SIGN IN</span>
+      </div>
+      <script type="mustache/x-tmpl" id="navigation">{{>nav}}</script>
+      <section class="slider">
+        <p class="label"> WINTER FINALE</p>
+        <h1 class="slider__title">Riders on The Storm</h1>
+        <h2 class="slider__season">Season 6 / Episode 10</h2>
+        <div class="buttons buttons_position">
+          <button class="oneButton oneButton_margin">Watch Now</button>
+          <button class="oneButton ">After After Show</button>
+        </div>
+        <div class="box">
+          <p class="box__ad">BOX AD</p>
+        </div>
+      </section>
+    </header>
+    <section class="advertising">
+      <section id="ads" class="ad-blocks"></section>
+      <script type="text/mustache" id="ad-blocks-imgs">{{>advertising}}</script>
+    </section>
+    <section class="episodes">
+      <div class="container">
+        <div class="episodesSections" id="episodeLinks"></div>
+        <script type="text/mustache" id="episodesSections">{{>episodesSections}}</script>
+        <div id="viewEpisode" class=""></div>
+        <script type="text/mustache" id="episodes">{{>episodes}}</script>
+      </div>
+    </section>
+    <section class="playlist">
+      <h2 class="section-name"><span > Playlists </span> </h2>
+      <div class=" playlists owl-carousel owl-theme" id="playlistItem">
+        <script type="text/mustache" id="playlists">{{>playlists}}</script>
+      </div>
+    </section>
+    <section class="news">
+      <div class="container">
+        <h2 class="section-name"> News </h2>
+        <div class="newsItemBig" id="newsItemBig"></div>
+        <div class="newsItemSmall newsItemSmall-margins" id="newsItemSmall"></div>
+        <button class="oneButton oneButton_episodesSections">Show More News</button>
+        <script type="text/mustache" id="newsItems">{{>news}}</script>
+        <script type="text/mustache" id="newsItemsMini">{{>newsSmallItems}}</script>
+      </div>
+    </section>
+    <section class="photos">
+      <h2 class="section-name"> Photos </h2>
+      <div class=" owl-carousel owl-theme " id="photos">
+        <div class=" big-block1 owl-item" id="photoBlock1"></div>
+        <div class=" big-block2 owl-item">
+          <div class="big-block2__left" id="photoBlock2"></div>
+          <div class="big-block2__right" id="photoBlock3"></div>
+        </div>
+        <script type="mustache/x-tmpl" id="photos_template1">{{>photoBlock1}}</script>
+        <script type="mustache/x-tmpl" id="photos_template2">{{>photoBlock2}}</script>
+        <script type="mustache/x-tmpl" id="photos_template3">{{>photoBlock3}}</script>
+      </div>
+    </section>
+    <section class="cast">
+      <h2 class="section-name"> Cast </h2>
+      <div class="owl-carousel owl-theme castPart" id="cast"></div>
+      <script type="mustache/x-tmpl" id="cast_template">{{>cast}}</script>
+    </section>
+    <section class="about">
+      <div class="container">
+        <article class="aboutSerial">
+          <p class="aboutSerial__title">About Teen Wolf</p>
+          <p class="aboutSerial__descr">Social outcast Scott McCall is a high school student living in the town of Beacon Hills. Scott's life drastically changes when he is bitten by a werewolf the night before sophomore year, becoming one himself. He must henceforth learn to balance
+            his problematic new identity with his day-to-day teenage life.</p>
+          <p class="aboutSerial__invitation">Follow</p>
+          <div class="aboutSerial__networks">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-tumblr-square" aria-hidden="true"></i>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="recommendations">
+      <h2 class="section-name"> Recommended </h2>
+      <div class="recommendations owl-carousel owl-theme" id="recommend"></div>
+      <script type="mustache/x-tmpl" id="recommend_template">{{>recommendations}}</script>
+    </section>
+    <section class="storiesSection">
+      <div class="stories">
+        <div class="">
+          <h3 class="stories__section-name">Sponsored Stories</h3>
+          <p class="stories__note">Recommended by Outbrain</p>
+        </div>
+        <div class="storiesItems" id="stories">
+        </div>
+      </div>
+      <script id="storiesItems" type="text/mustache">{{ > stories }}</script>
+    </section>
+    <footer class="about-viacom">
+      <div class="aboutCompany">
+        <div class="socialIcons">
+          <img src="imgs/logo/logo_viacom.png">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-tumblr" aria-hidden="true"></i>
+        </div>
+        <ul class="items">
+          <li>FAQ/Help</li>
+          <li>Jobs</li>
+          <li>Terms of Use (9/30/16)</li>
+          <li>Privacy Policy / Privacy Rights (9/30/16)</li>
+          <li>Copyright</li>
+          <li>Closed Captioning</li>
+          <li>Ad Choices</li>
+        </ul>
+        <p class="aboutCompany__info"><i class="fa fa-copyright" aria-hidden="true"></i> Viacom International Inc. All Rights Reserved. MTV and all related titles and logos are trademarks of Viacom International Inc.</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

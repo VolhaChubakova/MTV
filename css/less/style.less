@@ -1,0 +1,66 @@
+out:../style.css
+@import "../../blocks/header/header";
+@import "../../blocks/header/nav/nav";
+@import "../../blocks/header/slider/slider";
+@import "../../blocks/label/label";
+@import "../../blocks/buttons/buttons";
+@import "../../blocks/advertising/advertising";
+@import "../../blocks/episodes/episodesSections/episodesSections";
+@import "../../blocks/episodes/episodes/episodes";
+@import "../../blocks/cast/cast.less";
+@import "../../blocks/playlists/playlists";
+@import "../../blocks/news/news";
+@import "../../blocks/about/about";
+@import "../../blocks/recommendations/recommendations";
+@import "../../blocks/stories/stories";
+@import "../../blocks/about-viacom/about-viacom";
+@import "../../blocks/photos/photos";
+@import "mixins";
+@import "variables";
+
+
+body {
+  background-color: #F3F3F3;
+  width: 100%;
+  height: 100%;
+  font-family: @font2;
+  text-align: center;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.playlistsItem {
+  margin-left: 6px !important;
+}
+
+.wrapper {
+  overflow-x: hidden;
+}
+
+.section-name {
+  font-size: 40px;
+  font-family: @font2;
+  padding-top: 90px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: @color2;
+  display: inline-block;
+}
+
+.section-name {
+  .hover-and-active-Item;
+}
+
+.recommendations .section-name {
+  .recommend-hover;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 1216px;
+  margin: 0 auto;
+  height: auto;
+}
