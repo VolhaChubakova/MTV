@@ -1,0 +1,27 @@
+{
+  "playlists": [{
+    "class": "playlistItem_background1",
+    "icon": "All Videos",
+    "title": "Teen Wolf Comic Con Panels",
+    "videos": "13"
+  },
+  {
+    "class": "playlistItem_background2",
+    "icon": "All Videos",
+    "title": "Best Of: Teen Wolf Fight Scenes",
+    "videos": "81"
+  },
+  {
+    "class": "playlistItem_background3",
+    "icon": "All Videos",
+    "title": "Teen Wolf Season 6 Soundtrack",
+    "videos": "30"
+  },
+  {
+    "class": "playlistItem_background4",
+    "icon": "All Videos",
+    "title": "Best Of: Teen Wolf Fanvids",
+    "videos": "81"
+  }
+ ]
+}

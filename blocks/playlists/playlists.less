@@ -2,8 +2,6 @@
   color: @color1;
   z-index: 5;
   margin-bottom: 90px;
-
-
 }
 
 .playlistItem_background1 {
@@ -31,39 +29,41 @@
   background-image: url("../imgs/playlists/fanvids.jpg");
 }
 
-.playlistsItem__title {
-  font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 60px;
-  color: @color1 !important;
-  z-index: 5 !important;
-}
+.playlistsItem-elems {
+  position: absolute;
+  top: 105px;
+  color: @color1;
+  z-index: 2;
 
-.playlistsItem__video {
-  font-size: 19px;
-  color: white;
-}
+  .playlistsItem-elems_title {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 60px;
+    .item-hover;
+  }
 
-.fa-caret-square-o-right {
-  margin-top: 105px;
-  margin-bottom: 20px;
-  font-size: 2.5em !important;
-  color: white;
+  .playlistsItem-elems_video {
+    font-size: 19px;
+    .item-hover;
+  }
+
+  .fa-caret-square-o-right {
+    margin-bottom: 20px;
+    .item-hover;
+    font-size: 2.5em;
+  }
 }
-/*
-.owl-item {
-  width: 298px !important;
-}*/
 .playlistsItem__layout {
-  background-color: @color5;;
+  background-color: @color5;
   opacity: 0.4;
   position: absolute;
   width: 298px;
   height: 316px;
   z-index: 1;
 }
-.playlistsItem:hover{
-  .playlistsItem__layout{
+
+.playlistsItem:hover {
+  .playlistsItem__layout {
     display: none;
   }
 }

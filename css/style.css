@@ -1,16 +1,20 @@
 .header {
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  height: auto !important;
   position: relative;
-  background-image: url("../imgs/teen-wolf/teen-wolf-big.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  overflow: hidden;
+  height: auto;
+  display: block;
+  margin-bottom: -2px;
 }
-.nav {
+.header_img_desktop {
   position: relative;
-  height: 50px;
+  width: 100%;
+  height: auto;
+}
+.header_img_mobile {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 .nav__title {
   position: absolute;
@@ -22,12 +26,6 @@
   left: 70px;
   top: 13px;
   padding: 7px;
-}
-.nav__title_descr:hover {
-  color: #19FEFE;
-}
-.nav__title_descr:active {
-  color: #D0CDCF;
 }
 .nav__logo {
   position: absolute;
@@ -56,9 +54,11 @@ ul li {
 }
 .menu .menu__link:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .menu .menu__link:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .toggle-nav {
   display: none;
@@ -71,9 +71,11 @@ ul li {
 }
 .nav__title_signIn:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .nav__title_signIn:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .fa-search {
   color: white;
@@ -85,44 +87,48 @@ ul li {
 }
 .fa-search:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .fa-search:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .slider {
-  max-width: 1216px;
-  min-height: 385px;
+  left: 5%;
+  top: 29%;
   margin: 0 auto;
-  position: relative;
+  position: absolute;
+  width: 24%;
+  height: 35%;
+  text-align: left;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
 }
 .slider__title {
-  color: white;
-  position: absolute;
-  top: 115px;
-  left: 0px;
   font-size: 50px;
   font-weight: bold;
-  font-family: 'PT Sans', sans-serif;
+  margin-top: 23px;
+  margin-bottom: 20px;
 }
 .slider__title:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .slider__title:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .slider__season {
-  color: white;
-  position: absolute;
-  top: 210px;
-  left: 0px;
   font-size: 30px;
-  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 30px;
 }
 .slider__season:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .slider__season:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .slider__img {
   max-width: 100%;
@@ -130,11 +136,12 @@ ul li {
 }
 .box {
   position: absolute;
-  top: 302px;
-  right: 75px;
+  top: -100%;
+  right: 5%;
   width: 300px;
   height: 250px;
   background-color: #D0CDCF;
+  z-index: 1000;
 }
 .box__ad {
   position: absolute;
@@ -144,37 +151,29 @@ ul li {
   font-family: 'Oswald', sans-serif;
 }
 .label {
-  display: block !important;
-  position: absolute;
-  top: 70px;
-  left: 0px;
+  display: block ;
+  color: #1E0014;
   background-color: #19FEFE;
   font-size: 13px;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
-  padding: 5px;
+  width: 86px;
+  height: 20px;
+  text-align: center;
+  padding-top: 5px;
 }
 .buttons {
-  position: absolute;
-  top: 250px;
-  left: 25px;
   display: block;
   width: 280px;
   text-align: left;
 }
-.buttons_position {
-  position: absolute;
-  top: 270px;
-  left: 0px;
-}
-.slider .oneButton:hover {
-  color: #19FEFE;
+.oneButton_episodesSections {
+  color: #1E0014;
+  border: 3px solid #1E0014;
+  font-size: 15px;
+  padding: 10px;
   background-color: transparent;
-  border-color: #19FEFE;
-}
-.slider .oneButton:active {
-  color: #D0CDCF;
-  border-color: #D0CDCF;
+  font-weight: bold;
 }
 .oneButton {
   color: white;
@@ -188,16 +187,19 @@ ul li {
 .oneButton:hover {
   background-color: #D0CDCF;
   color: white;
+  cursor: pointer;
 }
 .oneButton:active {
   background-color: #19FEFE;
   color: #1E0014;
+  cursor: pointer;
 }
 .oneButton_margin {
   margin-right: 10px;
 }
 .advertising {
   background-color: #19FEFE;
+  position: relative;
 }
 .advertising .ad-blocks {
   text-align: left;
@@ -233,9 +235,11 @@ ul li {
 }
 .advertising .ad-blocks .ad-item .ad-item__descr:hover {
   color: #A29DA0;
+  cursor: pointer;
 }
 .advertising .ad-blocks .ad-item .ad-item__descr:active {
   color: #1E0014;
+  cursor: pointer;
 }
 .episodesSections {
   height: 122px;
@@ -256,50 +260,116 @@ ul li {
   color: #1E0014;
   border-bottom: 3px solid #19FEFE;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .episodesSections .episodeLinks .episodeLinks__link:active {
   font-weight: bold;
   color: #D0CDCF;
   border-bottom: 3px solid #D0CDCF;
+  cursor: pointer;
+}
+.episodesSections .episodeLinks .episodeLinks__link:active:hover {
+  font-weight: bold;
+  color: #1E0014;
+  border-bottom: 3px solid #19FEFE;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.episodesSections .episodeLinks .episodeLinks__link:active:active {
+  font-weight: bold;
+  color: #D0CDCF;
+  border-bottom: 3px solid #D0CDCF;
+  cursor: pointer;
+}
+.episodesSections .news .oneButton {
+  color: #1E0014 !important;
+  border: 3px solid #1E0014 !important;
+  font-size: 15px;
+  padding: 10px;
+  border: 3px solid white;
+  background-color: transparent;
+  font-weight: bold;
+}
+.episodesSections .news .oneButton:hover {
+  background-color: #D0CDCF;
+  color: white;
+  cursor: pointer;
+}
+.episodesSections .news .oneButton:active {
+  background-color: #19FEFE;
+  color: #1E0014;
+  cursor: pointer;
 }
 .episodesSections .oneButton_episodesSections {
   color: #1E0014;
-  border: 3px solid #1E0014;
-  display: block;
-  margin: 0 auto;
+  border: 3px solid #1E0014 ;
+  font-size: 15px;
+  padding: 10px;
+  border: 3px solid white;
+  background-color: transparent;
+  font-weight: bold;
+}
+.episodesSections .oneButton_episodesSections:hover {
+  background-color: #D0CDCF;
+  color: white;
+  cursor: pointer;
+}
+.episodesSections .oneButton_episodesSections:active {
+  background-color: #19FEFE;
+  color: #1E0014;
+  cursor: pointer;
 }
 .episodesSections .oneButton_episodesSections .fa-caret-square-o-down {
   margin-left: 10px;
   margin-bottom: 3px;
 }
+.episodes {
+  position: relative;
+}
 .episodeItem {
   position: relative;
-  max-width: 1216px;
-  height: 316px;
-  background-color: white;
+  height: auto;
   margin-bottom: 6px;
-  text-align: left;
+  text-align: right;
   margin: 6 auto;
+  width: 100%;
+  background-color: white;
 }
 .episodeInfo {
-  max-width: 350px;
-  margin-left: 25px;
-  padding-top: 50px;
+  padding-left: 25px;
   display: inline-block;
+  width: 25%;
+  text-align: left;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
 }
-.episodeItem__label {
+.episode-labels {
+  vertical-align: top !important;
+  height: 16px;
+}
+.label {
+  display: inline-block !important;
+  vertical-align: top;
+  height: 17px;
+}
+.episode-labels__label {
   display: none;
 }
-.episodeItem .label {
-  display: block;
-  top: 48px;
-  left: 65px;
+.episodeItem .label:first-child {
+  display: inline-block !important;
+  vertical-align: top;
+}
+.episode-labels__label:first-child {
+  display: none;
 }
 .episodeItem .oneButton_episodesSections {
   display: none;
 }
-.episodeInfo__icon {
-  display: block;
+.episode-labels__icon {
+  display: inline-block;
 }
 .episodeInfo__number {
   color: #A19C9F;
@@ -312,9 +382,11 @@ ul li {
 }
 .episodeInfo__number:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .episodeInfo__number:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .episodeInfo__date {
   color: #A19C9F;
@@ -327,9 +399,11 @@ ul li {
 }
 .episodeInfo__title:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .episodeInfo__title:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .episodeInfo__descr {
   margin-bottom: 20px;
@@ -364,14 +438,14 @@ ul li {
   left: 50%;
   margin-left: -75px;
 }
-.episodeImg {
-  max-width: 100%;
-  height: auto;
-  float: right;
+.episode-img {
   display: inline-block;
-  width: 66%;
-  height: 100%;
-  background-repeat: no-repeat;
+  width: 70%;
+}
+.episode-img_props {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 .episodeImg_background1 {
   background-image: url("../imgs/episodes/tw-episode1.jpg");
@@ -397,17 +471,19 @@ ul li {
 .episodeItem .oneButton-episodesSections {
   display: none;
 }
-.oneButton_episodesSections {
+.episodesSections .oneButton_episodesSections {
   color: #1E0014;
   border: 3px solid #1E0014;
   display: block;
   margin: 0 auto;
 }
-.cast {
-  /*
-  .owl-item {
-    width: 245px !important;
-  }*/
+.oneButton_episodesSections_last {
+  color: #1E0014;
+  border: 3px solid #1E0014;
+  position: absolute;
+  left: 50%;
+  margin-left: -87px;
+  bottom: 60px;
 }
 .cast .actor {
   width: 245px;
@@ -426,15 +502,19 @@ ul li {
 }
 .cast .actor .actor__surname:hover {
   color: #BAB6B8;
+  cursor: pointer;
 }
 .cast .actor .actor__surname:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .cast .actor .actor__role:hover {
   color: #BAB6B8;
+  cursor: pointer;
 }
 .cast .actor .actor__role:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .playlistItem {
   color: white;
@@ -462,27 +542,48 @@ ul li {
   height: 316px;
   background-image: url("../imgs/playlists/fanvids.jpg");
 }
-.playlistsItem__title {
+.playlistsItem-elems {
+  position: absolute;
+  top: 105px;
+  color: white;
+  z-index: 2;
+}
+.playlistsItem-elems .playlistsItem-elems_title {
   font-weight: bold;
   font-size: 25px;
   margin-bottom: 60px;
-  color: white !important;
-  z-index: 5 !important;
 }
-.playlistsItem__video {
+.playlistsItem-elems .playlistsItem-elems_title:hover {
+  color: #19FEFE;
+  cursor: pointer;
+}
+.playlistsItem-elems .playlistsItem-elems_title:active {
+  color: #D0CDCF;
+  cursor: pointer;
+}
+.playlistsItem-elems .playlistsItem-elems_video {
   font-size: 19px;
-  color: white;
 }
-.fa-caret-square-o-right {
-  margin-top: 105px;
+.playlistsItem-elems .playlistsItem-elems_video:hover {
+  color: #19FEFE;
+  cursor: pointer;
+}
+.playlistsItem-elems .playlistsItem-elems_video:active {
+  color: #D0CDCF;
+  cursor: pointer;
+}
+.playlistsItem-elems .fa-caret-square-o-right {
   margin-bottom: 20px;
-  font-size: 2.5em !important;
-  color: white;
+  font-size: 2.5em;
 }
-/*
-.owl-item {
-  width: 298px !important;
-}*/
+.playlistsItem-elems .fa-caret-square-o-right:hover {
+  color: #19FEFE;
+  cursor: pointer;
+}
+.playlistsItem-elems .fa-caret-square-o-right:active {
+  color: #D0CDCF;
+  cursor: pointer;
+}
 .playlistsItem__layout {
   background-color: #1E0014;
   opacity: 0.4;
@@ -508,7 +609,8 @@ ul li {
   position: relative;
 }
 .news .newsItemBig .itemBig__img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 .newsItemBig .itemBig {
   max-width: 595px;
@@ -528,13 +630,14 @@ ul li {
   font-size: 25px;
   color: #1E0014;
   margin-top: 28px;
-  margin-bottom: 25px;
 }
 .newsItemBig .itemBig .itemBig__title:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .newsItemBig .itemBig .itemBig__title:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .newsItemBig .itemBig .author__name {
   font-size: 15px;
@@ -546,9 +649,11 @@ ul li {
 }
 .newsItemBig .itemBig .author__name:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .newsItemBig .itemBig .author__name:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .newsItemBig .itemBig .author__date {
   font-size: 13px;
@@ -564,13 +669,16 @@ ul li {
   display: flex;
   height: 375px;
   text-align: left;
-  /* align-items: stretch; */
   justify-content: space-between;
 }
 .itemSmall {
   max-width: 390px;
   background-color: white;
   position: relative;
+}
+.itemSmall__img {
+  height: auto;
+  width: 100%;
 }
 .newsItemSmall .itemSmall .itemSmall__title {
   padding-left: 25px;
@@ -579,13 +687,14 @@ ul li {
   font-size: 19px;
   color: #1E0014;
   margin-top: 28px;
-  margin-bottom: 25px;
 }
 .newsItemSmall .itemSmall .itemSmall__title:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .newsItemSmall .itemSmall .itemSmall__title:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .newsItemSmall .itemSmall .author__name {
   font-size: 15px;
@@ -597,9 +706,11 @@ ul li {
 }
 .newsItemSmall .itemSmall .author__name:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .newsItemSmall .itemSmall .author__name:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .newsItemSmall .itemSmall .author__date {
   font-size: 13px;
@@ -607,98 +718,117 @@ ul li {
   color: #BAB6B8;
   margin-left: 13px;
 }
-.about {
-  background-image: url("../imgs/about-serial/about_serial.jpg");
-  background-repeat: no-repeat;
-  height: auto;
+.about-serial {
+  position: relative;
   text-align: center;
-  max-width: 100%;
-  background-size: 100% 100%;
+  width: 100%;
+  height: auto;
   text-align: left;
 }
-.about .aboutSerial {
-  text-align: left;
-  padding-bottom: 60px;
+.about-serial .about-serial_img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: -2px;
 }
-.about .aboutSerial .aboutSerial__title {
+.about-serial .about-teen {
+  text-align: left;
+  position: absolute;
+  top: 15%;
+}
+.about-serial .about-teen .about-teen__title {
   color: white;
   font-size: 27px;
   font-weight: bold;
-  padding-top: 65px;
   margin-bottom: 20px;
 }
-.about .aboutSerial .aboutSerial__title:hover {
+.about-serial .about-teen .about-teen__title:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__title:active {
+.about-serial .about-teen .about-teen__title:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__descr {
+.about-serial .about-teen .about-teen__descr {
   width: 395px;
   color: #AFB0B5;
   line-height: 1.1em;
   margin-bottom: 33px;
   font-size: 17px;
 }
-.about .aboutSerial .aboutSerial__descr:hover {
+.about-serial .about-teen .about-teen__descr:hover {
   color: white;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__invitation {
+.about-serial .about-teen .about-teen__invitation {
   color: white;
   font-size: 19px;
   font-weight: bold;
 }
-.about .aboutSerial .aboutSerial__invitation:hover {
+.about-serial .about-teen .about-teen__invitation:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__invitation:active {
+.about-serial .about-teen .about-teen__invitation:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks {
+.about-serial .about-teen .about-teen__networks {
   margin-top: 10px;
   font-size: 3em;
 }
-.about .aboutSerial .aboutSerial__networks:hover {
+.about-serial .about-teen .about-teen__networks:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks:active {
+.about-serial .about-teen .about-teen__networks:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks .fa-twitter-square {
+.about-serial .about-teen .about-teen__networks .fa-twitter-square {
   color: #1CA0F1;
 }
-.about .aboutSerial .aboutSerial__networks .fa-twitter-square:hover {
+.about-serial .about-teen .about-teen__networks .fa-twitter-square:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks .fa-twitter-square:active {
+.about-serial .about-teen .about-teen__networks .fa-twitter-square:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks .fa-facebook-square {
+.about-serial .about-teen .about-teen__networks .fa-facebook-square {
   color: #3C5A99;
 }
-.about .aboutSerial .aboutSerial__networks .fa-facebook-square:hover {
+.about-serial .about-teen .about-teen__networks .fa-facebook-square:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks .fa-facebook-square:active {
+.about-serial .about-teen .about-teen__networks .fa-facebook-square:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks .fa-instagram {
+.about-serial .about-teen .about-teen__networks .fa-instagram {
   color: #D73676;
 }
-.about .aboutSerial .aboutSerial__networks .fa-instagram:hover {
+.about-serial .about-teen .about-teen__networks .fa-instagram:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks .fa-instagram:active {
+.about-serial .about-teen .about-teen__networks .fa-instagram:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks .fa-tumblr-square {
+.about-serial .about-teen .about-teen__networks .fa-tumblr-square {
   color: #39475D;
 }
-.about .aboutSerial .aboutSerial__networks .fa-tumblr-square:hover {
+.about-serial .about-teen .about-teen__networks .fa-tumblr-square:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.about .aboutSerial .aboutSerial__networks .fa-tumblr-square:active {
+.about-serial .about-teen .about-teen__networks .fa-tumblr-square:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .recommendations {
   background-color: #1E0014;
@@ -716,9 +846,11 @@ ul li {
 }
 .recommendations .recommend .recommend__title:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .recommendations .recommend .recommend__title:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .storiesSection {
   background-color: #2B2128;
@@ -747,9 +879,11 @@ ul li {
 }
 .stories .stories__section-name:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .stories .stories__section-name:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .stories .storiesItems {
   width: 1240px;
@@ -775,9 +909,11 @@ ul li {
 }
 .stories .storiesItems .storyItem .storyItem__title:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .stories .storiesItems .storyItem .storyItem__title:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .stories .storiesItems .storyItem .storyItem__source {
   color: #716A6F;
@@ -792,7 +928,6 @@ ul li {
   width: 100%;
   max-width: 1216px;
   margin: 0 auto;
-  height: auto !important;
   color: white;
 }
 .about-viacom .aboutCompany .socialIcons {
@@ -811,12 +946,14 @@ ul li {
 .about-viacom .aboutCompany .socialIcons .fa-tumblr:hover,
 .about-viacom .aboutCompany .socialIcons .fa-twitter:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .about-viacom .aboutCompany .socialIcons .fa-facebook:active,
 .about-viacom .aboutCompany .socialIcons .fa-instagram:active,
 .about-viacom .aboutCompany .socialIcons .fa-tumblr:active,
 .about-viacom .aboutCompany .socialIcons .fa-twitter:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .about-viacom .aboutCompany .items {
   font-size: 15px;
@@ -830,9 +967,11 @@ ul li {
 }
 .about-viacom .aboutCompany ul li:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .about-viacom .aboutCompany ul li:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .about-viacom .aboutCompany .aboutCompany__info {
   padding-bottom: 38px;
@@ -841,9 +980,11 @@ ul li {
 }
 .about-viacom .aboutCompany .aboutCompany__info:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .about-viacom .aboutCompany .aboutCompany__info:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .big-block1 {
   width: 605px;
@@ -869,50 +1010,55 @@ ul li {
   position: relative;
   color: white;
 }
-.photoItemBig .photoItemBig__title {
+.photoItemBig .photoItemBig-text {
   position: absolute;
+  left: 25px;
+  top: 335px;
+  text-align: left;
+}
+.photoItemBig .photoItemBig-text .photoItemBig-text_title {
   font-size: 25px;
-  margin-top: 335px;
-  width: 245px;
+  width: 295px;
   font-weight: bold;
   text-align: left;
-  margin-left: 25px;
+  margin-bottom: 20px;
 }
-.photoItemBig .photoItemBig__title:hover {
+.photoItemBig .photoItemBig-text .photoItemBig-text_title:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.photoItemBig .photoItemBig__title:active {
+.photoItemBig .photoItemBig-text .photoItemBig-text_title:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
-.photoItemBig .photoItemBig__descr {
-  position: absolute;
-  margin-left: 25px;
-  margin-top: 410px;
+.photoItemBig .photoItemBig-text .photoItemBig-text_descr {
   font-size: 18px;
 }
 .photoItemSmall {
   position: relative;
   color: white;
 }
-.photoItemSmall .photoItemSmall__title {
+.photoItemSmall .photoItemSmall-text {
   position: absolute;
-  font-size: 21px;
-  margin-top: 120px;
-  width: 245px;
-  font-weight: bold;
+  top: 120px;
   text-align: left;
-  margin-left: 25px;
+  left: 25px;
 }
-.photoItemSmall .photoItemSmall__title:hover {
+.photoItemSmall .photoItemSmall-text .photoItemSmall-text_title {
+  font-size: 20px;
+  width: 245px;
+  margin-bottom: 17px;
+  font-weight: bold;
+}
+.photoItemSmall .photoItemSmall-text .photoItemSmall-text_title:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
-.photoItemSmall .photoItemSmall__title:active {
+.photoItemSmall .photoItemSmall-text .photoItemSmall-text_title:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
-.photoItemSmall .photoItemSmall__descr {
-  position: absolute;
-  margin-left: 25px;
-  margin-top: 180px;
+.photoItemSmall .photoItemSmall-text .photoItemSmall-text_descr {
   font-size: 18px;
 }
 .photoItem_background_1 {
@@ -926,8 +1072,6 @@ ul li {
   width: 298px;
   height: 221px;
   margin-bottom: 8px;
-  /*
-margin-right: 8px;*/
 }
 .photoItem_background_3 {
   background-image: url("../imgs/photos/photo_3.jpg");
@@ -939,117 +1083,122 @@ margin-right: 8px;*/
   width: 298px;
   height: 221px;
   margin-bottom: 8px;
-  /*  margin-bottom: 10px;*/
 }
 .photoItem_background_5 {
   background-image: url("../imgs/photos/photo_5.jpg");
   width: 298px;
   height: 221px;
 }
-.photos .owl-item {
-  /*height: 450px !important;*/
-  /*width: 605px !important*/
-}
 .photos .owl-stage-outer {
   height: 450px;
 }
-/*
-.owl-wrapper-outer {
-    height: 100% !important;
-}
-
-.owl-wrapper {
-     height: 100%;
-}
-
-.owl-item {
-    height: 100%;
-}
-*/
 .hover-and-active-Item:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .hover-and-active-Item:active {
   color: #1E0014;
+  cursor: pointer;
 }
 .slider-button:hover {
   color: #19FEFE;
   background-color: transparent;
   border-color: #19FEFE;
+  cursor: pointer;
 }
 .slider-button:active {
   color: #D0CDCF;
   border-color: #D0CDCF;
+  cursor: pointer;
 }
 .item-buttons:hover {
   background-color: #D0CDCF;
   color: white;
+  cursor: pointer;
 }
 .item-buttons:active {
   background-color: #19FEFE;
   color: #1E0014;
+  cursor: pointer;
 }
 .titles-epidodes:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .titles-epidodes:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .cast-hover:hover {
   color: #BAB6B8;
+  cursor: pointer;
 }
 .cast-hover:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .item-hover:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .item-hover:active {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .description-hover:hover {
   color: white;
+  cursor: pointer;
 }
 .slider-title:hover {
   color: #D0CDCF;
+  cursor: pointer;
 }
 .slider-title:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .advertising-hover:hover {
   color: #A29DA0;
+  cursor: pointer;
 }
 .advertising-hover:active {
   color: #1E0014;
+  cursor: pointer;
 }
 .recommend-hover:hover {
   color: white;
+  cursor: pointer;
 }
 .recommend-hover:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .links-hover:hover {
   font-weight: bold;
   color: #1E0014;
   border-bottom: 3px solid #19FEFE;
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .links-hover:active {
   font-weight: bold;
   color: #D0CDCF;
   border-bottom: 3px solid #D0CDCF;
+  cursor: pointer;
 }
 .links-hover-mobile:hover {
   font-weight: bold;
   color: #1E0014;
   border-bottom: none;
-  padding-bottom: 0px ;
+  padding-bottom: 0;
+  cursor: pointer;
 }
 .links-hover-mobile:active {
   font-weight: bold;
   color: #D0CDCF;
   border-bottom: none;
-  padding-bottom: 0px ;
+  padding-bottom: 0;
+  cursor: pointer;
 }
 body {
   background-color: #F3F3F3;
@@ -1057,6 +1206,7 @@ body {
   height: 100%;
   font-family: 'Noto Sans', sans-serif;
   text-align: center;
+  cursor: default;
 }
 html {
   overflow-x: hidden;
@@ -1078,15 +1228,19 @@ html {
 }
 .section-name:hover {
   color: #19FEFE;
+  cursor: pointer;
 }
 .section-name:active {
   color: #1E0014;
+  cursor: pointer;
 }
 .recommendations .section-name:hover {
   color: white;
+  cursor: pointer;
 }
 .recommendations .section-name:active {
   color: #19FEFE;
+  cursor: pointer;
 }
 .container {
   text-align: center;

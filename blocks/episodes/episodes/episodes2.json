@@ -1,0 +1,63 @@
+{
+  "episodes": [{
+    "class-label": "label",
+    "class-gradient": "",
+    "imgIcon": "key",
+    "numberEpisode": "10",
+    "date": "1/31/17",
+    "title": "Riders On The Storm",
+    "descr": "With the fate of Beacon Hills hanging in the balance, Scott and his pack face off against Douglas in a final showdown.",
+    "imgName": "tw-episode1",
+    "class-button": "",
+    "class-background": "episodeImg_background1"
+  },  
+  {
+    "class-label": "",
+    "class-gradient": "",
+    "imgIcon": "key",
+    "numberEpisode": "8",
+    "date": "1/17/17",
+    "title": "Blitzkrieg",
+    "descr": "Running out of time, Scott, Lydia and Malia decide to storm the rift in a desperate attempt to get Stiles back. Liam, Hayden and Mason make a deal with Theo in order to learn Douglas's real plan.",
+    "imgName": "tw-episode3",
+    "class-button": "",
+    "class-background": "episodeImg_background3"
+  },
+  {
+    "class-label": "",
+    "class-gradient": "",
+    "imgIcon": "key",
+    "numberEpisode": "9",
+    "date": "1/24/17",
+    "title": "Memory Found",
+    "descr": "While Liam and Theo act as decoys, Scott, Lydia and Malia enact a desperate plan to try and remember Stiles.",
+    "imgName": "tw-episode2",
+    "class-button": "",
+    "class-background": "episodeImg_background2"
+  },
+  {
+    "class-label": "",
+    "class-gradient": "",
+    "imgIcon": "key",
+    "numberEpisode": "7",
+    "date": "1/3/17",
+    "title": "Ghosted",
+    "descr": "Scott, Lydia and Malia search for clues about the Wild Hunt in a mysterious place called Canaan while Liam and Hayden resort to drastic measures in the fight against the Ghost Riders.",
+    "imgName": "tw-episode4",
+    "class-button": "",
+    "class-background": "episodeImg_background4"
+  },
+  {
+    "class-label": "",
+    "class-gradient": "episodeItem__shadow ",
+    "imgIcon": "key",
+    "numberEpisode": "5",
+    "date": "12/13/16",
+    "title": "Radio Silence",
+    "descr": "Running out of time, Scott, Lydia and Malia decide to storm the rift in a desperate attempt to get Stiles back. Liam, Hayden and Mason make a deal with Theo in order to learn Douglas's real plan.",
+    "imgName": "tw-episode5",
+    "class-button": "episodeInfo__button",
+    "class-background": "episodeImg_background5"
+  }
+ ]
+}

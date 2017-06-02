@@ -1,0 +1,32 @@
+{
+  "stories": [{
+      "imgName": "story_1",
+      "title": "New York Drivers Hit With A Big Surprise",
+      "source": "comparisons.org"
+    }, {
+      "imgName": "story_2",
+      "title": "The 10 Most Important Things To Do When Using Stitch Fix",
+      "source": "Stitch Fix"
+    },
+    {
+      "imgName": "story_3",
+      "title": "The 'Stunning' Truth About Neuropathy Nerve Pain",
+      "source": "Nerve Renew"
+    },
+    {
+      "imgName": "story_4",
+      "title": "Rihanna's Home Is Too Incredible For Words",
+      "source": "Lonny Magazine"
+    },
+    {
+      "imgName": "story_5",
+      "title": "How Older Men Tighten Their Skin",
+      "source": "The Modern Man Today"
+    },
+    {
+      "imgName": "story_6",
+      "title": "Rancher Warns Trump: Beware April 12",
+      "source": "Moneywise 411"
+    }
+  ]
+}

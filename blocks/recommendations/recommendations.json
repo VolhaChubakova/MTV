@@ -1,0 +1,22 @@
+{
+  "recommendations": [{
+      "imgName": "recommend_1",
+      "title": "Are You The One?"
+    }, {
+      "imgName": "recommend_2",
+      "title": "Catfish: The TV Show"
+    },
+    {
+      "imgName": "recommend_3",
+      "title": "The Challenge: Invasion Of The Champions"
+    },
+    {
+      "imgName": "recommend_4",
+      "title": "Stranded With A Million Dollars"
+    },
+    {
+      "imgName": "recommend_5",
+      "title": "Teen Mom OG"
+    }
+  ]
+}

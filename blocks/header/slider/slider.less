@@ -1,40 +1,45 @@
 .slider {
-max-width: 1216px;
-min-height: 385px;
-margin: 0 auto;
-position: relative;
-}
-.slider__title {
-  color: @color1;
   position: absolute;
-  top: 115px;
-  left: 0px;
+  left: 5%;
+  top: 29%;
+  margin: 0 auto;
+  position: absolute;
+  width: 24%;
+  height: 35%;
+  text-align: left;
+  color: @color1;
+  font-family: @font3;
+}
+
+.slider__title {
   font-size: 50px;
   font-weight: bold;
-  font-family: @font3;
+  margin-top: 23px;
+  margin-bottom: 20px;
   .slider-title;
 }
+
 .slider__season {
-  color: @color1;
-  position: absolute;
-  top: 210px;
-  left: 0px;
   font-size: 30px;
-  font-family: @font3;
+  margin-bottom: 30px;
   .slider-title;
 }
+
 .slider__img {
   max-width: 100%;
   height: auto;
 }
+
 .box {
   position: absolute;
-  top: 302px;
-  right: 75px;
+  top: -100%;
+  right: 5%;
   width: 300px;
   height: 250px;
-  background-color:@color2;
+  background-color: @color2;
+  z-index: 1000;
 }
+
 .box__ad {
   position: absolute;
   top: 50%;

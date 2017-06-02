@@ -1,32 +1,58 @@
+.episodes {
+  position: relative;
+}
+
 .episodeItem {
   position: relative;
-  max-width: 1216px;
-  height: 316px;
-  background-color: @color1;
+  height: auto;
   margin-bottom: 6px;
-  text-align: left;
+  text-align: right;
   margin: 6 auto;
+  width: 100%;
+  background-color: @color1;
 }
 .episodeInfo {
-  max-width: 350px;
-  margin-left: 25px;
-  padding-top: 50px;
+  padding-left: 25px;
   display: inline-block;
+  width: 25%;
+  text-align: left;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 30px;
 }
-.episodeItem__label {
+.episode-labels {
+  vertical-align: top !important;
+  height: 16px;
+}
+
+.label {
+  display: inline-block !important;
+  vertical-align: top;
+  height: 17px;
+}
+
+.episode-labels__label {
   display: none;
 }
-.episodeItem .label {
-  display: block;
-  top: 48px;
-  left: 65px;
+.episodeItem .label:first-child {
+  display: inline-block !important;
+  vertical-align: top;
 }
+
+.episode-labels__label:first-child {
+  display: none;
+}
+
 .episodeItem .oneButton_episodesSections {
   display: none;
 }
-.episodeInfo__icon {
-  display: block;
+
+.episode-labels__icon {
+  display: inline-block;
 }
+
 .episodeInfo__number {
   color: #A19C9F;
   font-weight: bold;
@@ -42,22 +68,26 @@
   color: #A19C9F;
   font-size: 13px;
 }
+
 .episodeInfo__title {
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 15px;
   .titles-epidodes;
 }
+
 .episodeInfo__descr {
   margin-bottom: 20px;
   line-height: 1.1em;
   font-size: 15px;
 }
+
 .oneButton-episode {
   color: black;
   border: 1px solid #A699A2;
   outline: 2px solid #361B2D;
 }
+
 .episodeItem__shadow {
   display: block;
   background: #FFF;
@@ -70,10 +100,11 @@
   background: -o-linear-gradient(271deg, #dfe4e8 11%, #eff4f5 44%, #f7fcfc 60%, #faffff 66%);
   background: -ms-linear-gradient(271deg, #dfe4e8 11%, #eff4f5 44%, #f7fcfc 60%, #faffff 66%);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.27) 5%, rgba(255, 255, 255, 0.95) 53%, rgb(230, 230, 232) 160%, rgb(255, 255, 255) 127%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr= '#DFE4E8', endColorstr='#FAFFFF', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=  '#DFE4E8', endColorstr='#FAFFFF', GradientType=0);
   left: 0;
   top: 0;
 }
+
 .episodeInfo__button {
   display: block !important;
   position: absolute;
@@ -81,14 +112,16 @@
   left: 50%;
   margin-left: -75px;
 }
-.episodeImg {
-  max-width: 100%;
-  height: auto;
-  float: right;
+
+.episode-img {
   display: inline-block;
-  width: 66%;
-  height: 100%;
-  background-repeat: no-repeat;
+  width: 70%;
+}
+
+.episode-img_props {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .episodeImg_background1 {
@@ -114,15 +147,27 @@
 .episodeImg_background5 {
   background-image: url("../imgs/episodes/tw-episode5.jpg");
 }
-.oneButton-margin{
+
+.oneButton-margin {
   margin-right: 10px;
 }
+
 .episodeItem .oneButton-episodesSections {
   display: none;
 }
-.oneButton_episodesSections {
+
+.episodesSections .oneButton_episodesSections {
   color: #1E0014;
   border: 3px solid #1E0014;
   display: block;
   margin: 0 auto;
+}
+
+.oneButton_episodesSections_last {
+  color: #1E0014;
+  border: 3px solid #1E0014;
+  position: absolute;
+  left: 50%;
+  margin-left: -87px;
+  bottom: 60px;
 }

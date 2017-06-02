@@ -1,13 +1,12 @@
-
-.big-block1{
-  width: 605px;
-  height: 450px;
-}
-.big-block1{
+.big-block1 {
   width: 605px;
   height: 450px;
 }
 
+.big-block1 {
+  width: 605px;
+  height: 450px;
+}
 
 .big-block2__left {
   display: inline-block;
@@ -21,29 +20,30 @@
   width: 298px;
   height: 450px;
   margin-right: 2px;
-
 }
 
 .photoItemBig {
   position: relative;
   color: @color1;
 
-  .photoItemBig__title {
+  .photoItemBig-text {
     position: absolute;
-    font-size: 25px;
-    margin-top: 335px;
-    width: 245px;
-    font-weight: bold;
+    left: 25px;
+    top: 335px;
     text-align: left;
-    margin-left: 25px;
-    .item-hover;
-  }
 
-  .photoItemBig__descr {
-    position: absolute;
-    margin-left: 25px;
-    margin-top: 410px;
-    font-size: 18px;
+    .photoItemBig-text_title {
+      font-size: 25px;
+      width: 295px;
+      font-weight: bold;
+      text-align: left;
+      margin-bottom: 20px;
+      .item-hover;
+    }
+
+    .photoItemBig-text_descr {
+      font-size: 18px;
+    }
   }
 }
 
@@ -51,22 +51,23 @@
   position: relative;
   color: @color1;
 
-  .photoItemSmall__title {
+  .photoItemSmall-text {
     position: absolute;
-    font-size: 21px;
-    margin-top: 120px;
-    width: 245px;
-    font-weight: bold;
+    top: 120px;
     text-align: left;
-    margin-left: 25px;
-    .item-hover;
-  }
+    left: 25px;
 
-  .photoItemSmall__descr {
-    position: absolute;
-    margin-left: 25px;
-    margin-top: 180px;
-    font-size: 18px;
+    .photoItemSmall-text_title {
+      font-size: 20px;
+      width: 245px;
+      margin-bottom: 17px;
+      font-weight: bold;
+      .item-hover;
+    }
+
+    .photoItemSmall-text_descr {
+      font-size: 18px;
+    }
   }
 }
 
@@ -82,8 +83,6 @@
   width: 298px;
   height: 221px;
   margin-bottom: 8px;
-  /*
-margin-right: 8px;*/
 }
 
 .photoItem_background_3 {
@@ -97,7 +96,6 @@ margin-right: 8px;*/
   width: 298px;
   height: 221px;
   margin-bottom: 8px;
-  /*  margin-bottom: 10px;*/
 }
 
 .photoItem_background_5 {
@@ -106,23 +104,6 @@ margin-right: 8px;*/
   height: 221px;
 }
 
-.photos .owl-item {
-  /*height: 450px !important;*/
-  /*width: 605px !important*/
-}
-
 .photos .owl-stage-outer {
   height: 450px;
-}/*
-.owl-wrapper-outer {
-    height: 100% !important;
 }
-
-.owl-wrapper {
-     height: 100%;
-}
-
-.owl-item {
-    height: 100%;
-}
-*/

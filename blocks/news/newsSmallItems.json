@@ -1,0 +1,20 @@
+{
+  "newsSmallItems": [{
+      "imgName": "news3",
+      "title": "Affairs Of The Heart: These Are Our Favorite 'I Love You' Moments From Teen Wolf",
+      "author": "by Tina Smithers Peckham",
+      "date": "1/20/17"
+    }, {
+      "imgName": "news4",
+      "title": "How Stiles Got His Real Teen Wolf Name",
+      "author": "by Jordana Ossad",
+      "date": "1/18/17"
+    },
+    {
+      "imgName": "news5",
+      "title": "Where Is The Teen Wolf 'Rift' That Will Finally Lead To Stiles",
+      "author": "by Tina Smithers Peckham",
+      "date": "1/17/17"
+    }
+  ]
+}

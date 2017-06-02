@@ -1,0 +1,27 @@
+{
+  "cast": [{
+      "imgName": "kira-yukimura",
+      "surname": "Areden Cho",
+      "role": "Kira Yukimura"
+    }, {
+      "imgName": "Dylan-Obrien",
+      "surname": "Dylan Obrien",
+      "role": "Stiles Stilinski"
+    },
+    {
+      "imgName": "dylan_sprayberry",
+      "surname": "Dylan Sprayberry",
+      "role": "Lian Dunbar"
+    },
+    {
+      "imgName": "Lydia_Martin",
+      "surname": "Holland Roden",
+      "role": "Lydia Martin"
+    },
+    {
+      "imgName": "malia_tate",
+      "surname": "Shelley Henning",
+      "role": "Malia Tate"
+    }
+  ]
+}

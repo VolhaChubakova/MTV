@@ -1,0 +1,11 @@
+{
+  "photoBlock2": [{
+      "class": "photoItem_background_2",
+      "imgName": "photo_2"
+    },
+    {
+      "class": "photoItem_background_3",
+      "imgName": "photo_3"
+    }
+  ]
+}

@@ -1,26 +1,31 @@
-.about {
-  background-image: url("../imgs/about-serial/about_serial.jpg");
-  background-repeat: no-repeat;
-  height: auto;
+.about-serial {
+  position: relative;
   text-align: center;
-  max-width: 100%;
-  background-size: 100% 100%;
+  width: 100%;
+  height: auto;
   text-align: left;
 
-  .aboutSerial {
-    text-align: left;
-    padding-bottom: 60px;
+  .about-serial_img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: -2px;
+  }
 
-    .aboutSerial__title {
+  .about-teen {
+    text-align: left;
+    position: absolute;
+    top: 15%;
+
+    .about-teen__title {
       color: @color1;
       font-size: 27px;
       font-weight: bold;
-      padding-top: 65px;
       margin-bottom: 20px;
       .item-hover;
     }
 
-    .aboutSerial__descr {
+    .about-teen__descr {
       width: 395px;
       color: #AFB0B5;
       line-height: 1.1em;
@@ -29,14 +34,14 @@
       .description-hover;
     }
 
-    .aboutSerial__invitation {
+    .about-teen__invitation {
       color: @color1;
       font-size: 19px;
       font-weight: bold;
       .item-hover;
     }
 
-    .aboutSerial__networks {
+    .about-teen__networks {
       margin-top: 10px;
       font-size: 3em;
       .item-hover;

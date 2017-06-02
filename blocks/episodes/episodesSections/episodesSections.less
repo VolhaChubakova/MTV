@@ -1,8 +1,10 @@
 .episodesSections {
   height: 122px;
   padding-top: 53px;
+
   .episodeLinks {
     margin-top: 20px;
+
     .episodeLinks__link {
       color: @color4;
       font-weight: bold;
@@ -10,16 +12,37 @@
       text-decoration: none;
       margin-left: 30px;
     }
-    .episodeLinks__link{
+
+    .episodeLinks__link {
       .links-hover;
     }
-  
+
+    .episodeLinks__link:active {
+      .links-hover;
+    }
   }
+
+  .news .oneButton {
+    color: #1E0014 !important;
+    border: 3px solid #1E0014 !important;
+    font-size: 15px;
+    padding: 10px;
+    border: 3px solid @color1;
+    background-color: transparent;
+    font-weight: bold;
+    .item-buttons;
+  }
+
   .oneButton_episodesSections {
-    color: @color5;
-    border: 3px solid @color5;
-    display: block;
-    margin: 0 auto;
+    color: #1E0014;
+    border: 3px solid #1E0014 ;
+    font-size: 15px;
+    padding: 10px;
+    border: 3px solid @color1;
+    background-color: transparent;
+    font-weight: bold;
+    .item-buttons;
+
     .fa-caret-square-o-down {
       margin-left: 10px;
       margin-bottom: 3px;

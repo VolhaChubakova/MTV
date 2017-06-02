@@ -1,7 +1,5 @@
-.nav {
-  position: relative;
-  height: 50px;
-}
+@import "variables";
+
 .nav__title {
   position: absolute;
   color: @color1;
@@ -13,7 +11,6 @@
   left: 70px;
   top: 13px;
   padding: 7px;
-  .item-hover;
 }
 
 .nav__logo {
@@ -21,12 +18,14 @@
   left: 12px;
   top: 12px;
 }
+
 ul li {
-padding-bottom: 10px;
-line-height: 1.5;
-display: inline-block;
-margin-right: 15px;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  display: inline-block;
+  margin-right: 15px;
 }
+
 .menu {
   display: inline;
   position: absolute;
@@ -55,6 +54,7 @@ margin-right: 15px;
   border-left: 1px solid @color1;
   .item-hover;
 }
+
 .fa-search {
   color: @color1;
   padding-right: 5px;
